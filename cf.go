@@ -4,12 +4,11 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/backup1/cf-tool/cmd"
+	"github.com/backup1/cf-tool/config"
+	docopt "github.com/docopt/docopt-go"
 	"github.com/fatih/color"
 	ansi "github.com/k0kubun/go-ansi"
-	"github.com/xalanq/cf-tool/cmd"
-	"github.com/xalanq/cf-tool/config"
-
-	docopt "github.com/docopt/docopt-go"
 )
 
 const version = "v0.8.2"

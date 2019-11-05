@@ -3,8 +3,8 @@ package cmd
 import (
 	"os"
 
-	"github.com/xalanq/cf-tool/client"
-	"github.com/xalanq/cf-tool/config"
+	"github.com/backup1/cf-tool/client"
+	"github.com/backup1/cf-tool/config"
 )
 
 // Clone command

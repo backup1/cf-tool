@@ -8,9 +8,9 @@ import (
 	"os"
 	"regexp"
 
+	"github.com/backup1/cf-tool/cookiejar"
+	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
-	"github.com/xalanq/cf-tool/cookiejar"
-	"github.com/xalanq/cf-tool/util"
 )
 
 // Client codeforces client

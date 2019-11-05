@@ -15,8 +15,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
-	"github.com/xalanq/cf-tool/util"
 )
 
 func less(a, b string) bool {

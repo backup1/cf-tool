@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/backup1/cf-tool/config"
+	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
-	"github.com/xalanq/cf-tool/config"
-	"github.com/xalanq/cf-tool/util"
 )
 
 func parseTemplate(source string, cfg *config.Config) string {
