@@ -11,7 +11,7 @@ import (
 	ansi "github.com/k0kubun/go-ansi"
 )
 
-const version = "v0.8.3"
+const version = "v0.9.0"
 
 func main() {
 	usage := `Codeforces Tool $%version%$ (cf). https://github.com/backup1/cf-tool
