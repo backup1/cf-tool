@@ -4,7 +4,7 @@
 [![platform](https://img.shields.io/badge/platform-win%20%7C%20osx%20%7C%20linux-blue.svg)](https://github.com/backup1/cf-tool/releases)
 [![Build Status](https://travis-ci.org/backup1/cf-tool.svg?branch=master)](https://travis-ci.org/backup1/cf-tool)
 [![Go Report Card](https://goreportcard.com/badge/github.com/backup1/cf-tool)](https://goreportcard.com/report/github.com/backup1/cf-tool)
-[![Go Version](https://img.shields.io/badge/go-%3E%3D1.12-green.svg)](https://github.com/golang)
+[![Go Version](https://img.shields.io/badge/go-%3E%3D1.13-green.svg)](https://github.com/golang)
 [![license](https://img.shields.io/badge/license-MIT-%23373737.svg)](https://raw.githubusercontent.com/backup1/cf-tool/master/LICENSE)
 
 Codeforces Tool is a command-line interface tool for [Codeforces](https://codeforces.com).
