@@ -1,17 +1,18 @@
 package cmd
 
 import (
+	"cf-tool/client"
+	"cf-tool/config"
 	"fmt"
 	"time"
 
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/config"
 	"github.com/skratchdot/open-golang/open"
 )
 
 // Race command
 func Race(args map[string]interface{}) error {
 	contestID, err := getContestID(args)
+	fmt.Println(contestID)
 	if err != nil {
 		return err
 	}
@@ -26,6 +27,7 @@ func Race(args map[string]interface{}) error {
 		}
 	}
 	time.Sleep(1)
+	fmt.Printf(cln.Host+"/contest/%v/problems\n", contestID)
 	open.Run(client.ToGym(fmt.Sprintf(cln.Host+"/contest/%v", contestID), contestID))
 	open.Run(client.ToGym(fmt.Sprintf(cln.Host+"/contest/%v/problems", contestID), contestID))
 	return Parse(args)

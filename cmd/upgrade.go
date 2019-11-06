@@ -3,6 +3,7 @@ package cmd
 import (
 	"archive/zip"
 	"bytes"
+	"cf-tool/util"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -15,7 +16,6 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
 )
 
@@ -62,7 +62,7 @@ func getLatest() (version, note, ptime, url string, size uint, err error) {
 		return
 	}
 
-	resp, err := http.Get("https://api.github.com/repos/xalanq/cf-tool/releases/latest")
+	resp, err := http.Get("https://api.github.com/repos/backup1/cf-tool/releases/latest")
 	if err != nil {
 		return
 	}
@@ -77,7 +77,7 @@ func getLatest() (version, note, ptime, url string, size uint, err error) {
 	note = result["body"].(string)
 	tm, _ := time.Parse("2006-01-02T15:04:05Z", result["published_at"].(string))
 	ptime = tm.In(time.Local).Format("2006-01-02 15:04")
-	url = fmt.Sprintf("https://github.com/xalanq/cf-tool/releases/download/%v/cf_%v_%v_%v.zip", version, version, goos, arch)
+	url = fmt.Sprintf("https://github.com/backup1/cf-tool/releases/download/%v/cf_%v_%v_%v.zip", version, version, goos, arch)
 	assets, _ := result["assets"].([]interface{})
 	for _, tmp := range assets {
 		asset, _ := tmp.(map[string]interface{})

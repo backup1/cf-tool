@@ -1,10 +1,9 @@
 package cmd
 
 import (
+	"cf-tool/client"
+	"cf-tool/config"
 	"os"
-
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/config"
 )
 
 // Clone command

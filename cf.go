@@ -1,20 +1,22 @@
 package main
 
 import (
+	"cf-tool/cmd"
+	"cf-tool/config"
 	"fmt"
 	"strings"
 
-	"github.com/backup1/cf-tool/cmd"
-	"github.com/backup1/cf-tool/config"
 	docopt "github.com/docopt/docopt-go"
 	"github.com/fatih/color"
 	ansi "github.com/k0kubun/go-ansi"
 )
 
-const version = "v0.8.2"
+const version = "v0.8.3"
 
 func main() {
-	usage := `Codeforces Tool $%version%$ (cf). https://github.com/xalanq/cf-tool
+	usage := `Codeforces Tool $%version%$ (cf). https://github.com/backup1/cf-tool
+
+(forked from https://github.com/xalanq/cf-tool)
 
 You should run "cf config" to configure your username, password and the code template at first.
 
@@ -66,7 +68,7 @@ Examples:
   cf pull 100 a        Pull the latest code of problem "a" of contest 100 into "./100/<problem-id>".
   cf pull ac 100 a     Pull the "Accepted" or "Pretests passed" code of problem "a" of contest 100.
   cf pull              Pull the latest code of current problem into current path.
-  cf clone xalanq      Clone all codes of xalanq.
+  cf clone             Clone all codes of cf-tool.
   cf upgrade           Upgrade the "cf" to the latest version from GitHub.
 
 Notes:
@@ -106,7 +108,7 @@ Script in template:
   You can insert some placeholders in your scripts. When execute a script,
   cf will replace all placeholders by following rules:
 
-  $%path%$   Path to source file (Excluding $%full%$, e.g. "/home/xalanq/")
+  $%path%$   Path to source file (Excluding $%full%$, e.g. "/home/cf-tool/")
   $%full%$   Full name of source file (e.g. "a.cpp")
   $%file%$   Name of source file (Excluding suffix, e.g. "a")
   $%rand%$   Random string with 8 character (including "a-z" "0-9")

@@ -1,13 +1,12 @@
 package cmd
 
 import (
+	"cf-tool/client"
+	"cf-tool/config"
 	"fmt"
 	"io/ioutil"
 	"os"
 	"strings"
-
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/config"
 )
 
 // Submit command

@@ -76,7 +76,7 @@ func findProblems(body []byte) ([]StatisInfo, error) {
 
 // StatisContest get contest problems statis
 func (c *Client) StatisContest(contestID string) (problems []StatisInfo, err error) {
-	color.Cyan(ToGym("Get statis in contest %v\n", contestID), contestID)
+	color.Cyan(ToGym("Get statis aaaaaaaaaaaaaaa in contest %v\n", contestID), contestID)
 
 	URL := ToGym(fmt.Sprintf(c.Host+"/contest/%v", contestID), contestID)
 	resp, err := c.client.Get(URL)

@@ -3,6 +3,8 @@ package cmd
 import (
 	"bufio"
 	"bytes"
+	"cf-tool/config"
+	"cf-tool/util"
 	"errors"
 	"fmt"
 	"io"
@@ -13,8 +15,6 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/backup1/cf-tool/config"
-	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
 	ansi "github.com/k0kubun/go-ansi"
 	"github.com/sergi/go-diff/diffmatchpatch"

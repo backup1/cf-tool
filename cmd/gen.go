@@ -1,6 +1,8 @@
 package cmd
 
 import (
+	"cf-tool/config"
+	"cf-tool/util"
 	"errors"
 	"fmt"
 	"io/ioutil"
@@ -9,8 +11,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/backup1/cf-tool/config"
-	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
 )
 

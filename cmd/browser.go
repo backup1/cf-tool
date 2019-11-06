@@ -1,11 +1,11 @@
 package cmd
 
 import (
+	"cf-tool/client"
+	"cf-tool/config"
 	"fmt"
 	"strconv"
 
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/config"
 	"github.com/skratchdot/open-golang/open"
 )
 
@@ -15,10 +15,12 @@ func Open(args map[string]interface{}) error {
 	if err != nil {
 		return err
 	}
+	fmt.Println(contestID)
 	problemID, err := getProblemID(args)
 	if err != nil {
 		return err
 	}
+	fmt.Println(problemID)
 	if problemID == contestID {
 		return open.Run(client.ToGym(fmt.Sprintf(client.New(config.SessionPath).Host+"/contest/%v", contestID), contestID))
 	}

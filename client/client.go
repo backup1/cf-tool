@@ -1,6 +1,8 @@
 package client
 
 import (
+	"cf-tool/cookiejar"
+	"cf-tool/util"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -8,8 +10,6 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/backup1/cf-tool/cookiejar"
-	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
 )
 

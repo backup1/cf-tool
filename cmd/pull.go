@@ -1,12 +1,11 @@
 package cmd
 
 import (
+	"cf-tool/client"
+	"cf-tool/config"
 	"os"
 	"path/filepath"
 	"strings"
-
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/config"
 )
 
 // Pull command

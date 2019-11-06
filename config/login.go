@@ -1,6 +1,8 @@
 package config
 
 import (
+	"cf-tool/client"
+	"cf-tool/util"
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/md5"
@@ -11,8 +13,6 @@ import (
 	"io"
 	"syscall"
 
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
 	"golang.org/x/crypto/ssh/terminal"
 )

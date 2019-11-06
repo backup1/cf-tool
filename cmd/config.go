@@ -1,9 +1,10 @@
 package cmd
 
 import (
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/config"
-	"github.com/backup1/cf-tool/util"
+	"cf-tool/client"
+	"cf-tool/config"
+	"cf-tool/util"
+
 	"github.com/fatih/color"
 	ansi "github.com/k0kubun/go-ansi"
 )

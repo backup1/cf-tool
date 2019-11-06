@@ -1,6 +1,9 @@
 package cmd
 
 import (
+	"cf-tool/client"
+	"cf-tool/config"
+	"cf-tool/util"
 	"errors"
 	"fmt"
 	"io/ioutil"
@@ -10,9 +13,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/config"
-	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
 )
 

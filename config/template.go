@@ -1,14 +1,14 @@
 package config
 
 import (
+	"cf-tool/client"
+	"cf-tool/util"
 	"fmt"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
 
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/util"
 	"github.com/fatih/color"
 	ansi "github.com/k0kubun/go-ansi"
 	homedir "github.com/mitchellh/go-homedir"
@@ -99,7 +99,7 @@ func (c *Config) AddTemplate() (err error) {
   You can insert some placeholders in your scripts. When execute a script,
   cf will replace all placeholders by following rules:
 
-  $%path%$   Path to source file (Excluding $%full%$, e.g. "/home/xalanq/")
+  $%path%$   Path to source file (Excluding $%full%$, e.g. "/home/cf-tool/")
   $%full%$   Full name of source file (e.g. "a.cpp")
   $%file%$   Name of source file (Excluding suffix, e.g. "a")
   $%rand%$   Random string with 8 character (including "a-z" "0-9")`

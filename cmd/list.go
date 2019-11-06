@@ -3,11 +3,11 @@ package cmd
 import (
 	"bufio"
 	"bytes"
+	"cf-tool/client"
+	"cf-tool/config"
 	"io"
 	"strings"
 
-	"github.com/backup1/cf-tool/client"
-	"github.com/backup1/cf-tool/config"
 	"github.com/fatih/color"
 	ansi "github.com/k0kubun/go-ansi"
 	"github.com/olekukonko/tablewriter"
